@@ -1,0 +1,105 @@
+#paineis-sobre {
+    margin-top: 20px;
+}
+
+html, body {
+    height: 100%;/*quando não aparecer a imagem que colocamos com background, devemos colocar uma altura height: 100% no html e body, além disso, colocar na tag onde está nossa imagem background */
+}
+
+header {
+    background-image: url(img/castelo.jpg);
+    background-size: cover;
+    background-position: top center; /*em cima e no centro*/
+    height: 100%;
+    position: relative;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.topcasafina-banner {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 70%;
+    border-radius: 9px;
+    position: absolute;
+    top: 50%; /*colocou o conteúdo no meio do header*/
+    left: 50%; /*deslocou o conteúdo para esquerda do header*/
+    transform: translate(-50%, -50%); /*mexe no conteúdo topcasafina-banner em cima e a esquerda -50% */
+    transition: 0.5s;
+}
+
+.titulo-depoimentos {
+    background-color: #0275d8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.video-institucional {
+    font-size: 25px;
+    text-align: center;
+}
+
+.grupo-radio {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contato-select {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grupo-radio .radio:first-child { /*modifica o primeiro radio*/
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer address:last-child {
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 768px) { /*aplicar quando chegar no 768px*/
+    #paineis-sobre {
+        margin-top: 0;
+    }
+
+    .sobrenos-reponsive {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .topcasafina-banner {
+       left: 0;
+       transform: translate(0, -80%);
+       width: 50%;
+        
+    }
+
+    .topcasafina-bannerWrapper {
+        position: relative;
+        height: 100%;
+    }
+    
+    .img-responsiva {
+        width: 100%;
+    }
+}
